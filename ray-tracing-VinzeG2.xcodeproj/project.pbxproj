@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D41785D1E5D1CD900A76390 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D41785C1E5D1CD900A76390 /* main.cpp */; };
+		1D4178651E5D1D3E00A76390 /* RGB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D4178631E5D1D3E00A76390 /* RGB.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		1D4178591E5D1CD900A76390 /* ray-tracing-VinzeG2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ray-tracing-VinzeG2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D41785C1E5D1CD900A76390 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1D4178631E5D1D3E00A76390 /* RGB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RGB.cpp; sourceTree = "<group>"; };
+		1D4178641E5D1D3E00A76390 /* RGB.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RGB.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,8 @@
 			children = (
 				1D41785B1E5D1CD900A76390 /* ray-tracing-VinzeG2 */,
 				1D41785A1E5D1CD900A76390 /* Products */,
+				1D4178631E5D1D3E00A76390 /* RGB.cpp */,
+				1D4178641E5D1D3E00A76390 /* RGB.hpp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D41785D1E5D1CD900A76390 /* main.cpp in Sources */,
+				1D4178651E5D1D3E00A76390 /* RGB.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
