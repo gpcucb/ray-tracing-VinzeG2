@@ -8,8 +8,23 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+#include "Vector.hpp"
+
+
+using namespace std;
+int main()
+{
+    cout << "Hello world!" << endl;
+    
+    Vector A(1,2,3);
+    Vector B(0,1,2);
+    
+    A.restar(B);
+    A.mostrar();
+    
+    cout<<endl;
+    
+    A.sumar(A);
+    A.mostrar();
     return 0;
 }
