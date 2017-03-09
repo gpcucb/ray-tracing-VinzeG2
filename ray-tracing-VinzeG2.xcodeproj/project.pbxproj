@@ -11,6 +11,7 @@
 		1D4178651E5D1D3E00A76390 /* RGB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D4178631E5D1D3E00A76390 /* RGB.cpp */; };
 		1DB45C5D1E6F5FBD00061509 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB45C5B1E6F5FBD00061509 /* Vector.cpp */; };
 		1DB45C601E6F60C500061509 /* Ray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB45C5E1E6F60C500061509 /* Ray.cpp */; };
+		1DCD7FB31E71F0AF00FB3FB9 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD7FB11E71F0AF00FB3FB9 /* Camera.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		1DB45C5C1E6F5FBD00061509 /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
 		1DB45C5E1E6F60C500061509 /* Ray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ray.cpp; sourceTree = "<group>"; };
 		1DB45C5F1E6F60C500061509 /* Ray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Ray.hpp; sourceTree = "<group>"; };
+		1DCD7FB11E71F0AF00FB3FB9 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		1DCD7FB21E71F0AF00FB3FB9 /* Camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +53,8 @@
 		1D4178501E5D1CD900A76390 = {
 			isa = PBXGroup;
 			children = (
+				1DCD7FB11E71F0AF00FB3FB9 /* Camera.cpp */,
+				1DCD7FB21E71F0AF00FB3FB9 /* Camera.hpp */,
 				1DB45C5E1E6F60C500061509 /* Ray.cpp */,
 				1DB45C5F1E6F60C500061509 /* Ray.hpp */,
 				1DB45C5B1E6F5FBD00061509 /* Vector.cpp */,
@@ -137,6 +142,7 @@
 			files = (
 				1DB45C601E6F60C500061509 /* Ray.cpp in Sources */,
 				1D41785D1E5D1CD900A76390 /* main.cpp in Sources */,
+				1DCD7FB31E71F0AF00FB3FB9 /* Camera.cpp in Sources */,
 				1D4178651E5D1D3E00A76390 /* RGB.cpp in Sources */,
 				1DB45C5D1E6F5FBD00061509 /* Vector.cpp in Sources */,
 			);

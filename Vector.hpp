@@ -13,11 +13,18 @@ class Vector
 {
 public:
     Vector();
+    float getX(){return x;};
+    float getY(){return y;};
+    float getZ(){return z;};
     Vector(float,float,float);
     virtual ~Vector();
-    void sumar(Vector);
-    void restar(Vector);
-    void mostrar();
+    Vector plus(Vector);
+    Vector minus(Vector);
+    float module();
+    Vector vectorialProduct(Vector);
+    float scalarProduct(Vector);
+    Vector product(float);
+    void show();
 protected:
     
 private:

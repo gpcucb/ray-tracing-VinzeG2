@@ -19,12 +19,12 @@ int main()
     Vector A(1,2,3);
     Vector B(0,1,2);
     
-    A.restar(B);
-    A.mostrar();
+    A.minus(B);
+    A.show();
     
     cout<<endl;
     
-    A.sumar(A);
-    A.mostrar();
+    A.plus(A);
+    A.show();
     return 0;
 }

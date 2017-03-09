@@ -7,6 +7,7 @@
 //
 
 #include "Vector.hpp"
+#include <math.h>
 #include <iostream>
 
 using namespace std;
@@ -30,23 +31,66 @@ Vector::~Vector()
     //dtor
 }
 
-void Vector::mostrar()
+void Vector::show()
 {
     cout<<"<"<<x<<","<<y<<","<<z<<">";
 }
 
-void Vector::sumar(Vector A)
+Vector Vector::plus(Vector A)
 {
-    x = x + A.x;
-    y = y + A.y;
-    z = z + A.z;
+    float a,b,c;
+    a = x + A.x;
+    b = y + A.y;
+    c = z + A.z;
+    Vector result(a,b,c);
+    return result;
     
 }
 
 
-void Vector::restar(Vector A)
+Vector Vector::minus(Vector A)
 {
-    x = x - A.x;
-    y = y - A.y;
-    z = z - A.z;
+    float a,b,c;
+    a = x - A.x;
+    b = y - A.y;
+    c = z - A.z;
+    Vector result(a,b,c);
+    return result;
+}
+
+
+float Vector::module()
+{
+    return sqrtf(pow(x, 2) + pow(y, 2) + pow(z, 2));
+}
+
+Vector Vector::vectorialProduct(Vector B)
+{
+    float a,b,c;
+    a = y*B.z - z*B.y;
+    b = x*B.z - z*B.x;
+    c = x*B.y - y*B.x;
+    Vector result(a,b,c);
+    return result;
+}
+
+float Vector::scalarProduct(Vector B)
+{
+    float a,b,c;
+    a = x*B.x;
+    b = y*B.y;
+    c = z*B.z;
+    float result = a+b+c;
+    return result;
+}
+
+Vector Vector::product(float number)
+{
+    float a,b,c;
+    a = x*number;
+    b = y*number;
+    c = z*number;
+    Vector result(a,b,c);
+    return result;
+    
 }
