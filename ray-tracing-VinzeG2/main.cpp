@@ -9,6 +9,8 @@
 #include <iostream>
 
 #include "Vector.hpp"
+#include "Camera.hpp"
+#include "Ray.hpp"
 
 
 using namespace std;
@@ -16,15 +18,25 @@ int main()
 {
     cout << "Hello world!" << endl;
     
-    Vector A(1,2,3);
-    Vector B(0,1,2);
+    Vector e(1,2,-6);
+    Vector center(1,2,-4);
+    Vector up(0,1,0);
+    float fov = 39;
+    float df =1;
+    float nx = 640;
+    float ny = 480;
     
-    A.minus(B);
-    A.show();
+    Camera camera(e,center,up,fov,df);
+    Vector dir;
     
-    cout<<endl;
     
-    A.plus(A);
-    A.show();
+    for (int i = 0; i < nx; i++) {
+        for (int j = 0; j < ny; j++) {
+            dir = camera.rayDirection(i, j, nx, ny);
+            dir.show();
+            cout<<endl;
+        }
+    }
+    
     return 0;
 }

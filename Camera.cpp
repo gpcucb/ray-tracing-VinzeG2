@@ -7,17 +7,21 @@
 //
 
 #include "Camera.hpp"
+#include <math.h>
 
 Camera::Camera()
 {
     
 }
 
-Camera::Camera(Vector a, Vector b, Vector c)
+Camera::Camera(Vector a, Vector b, Vector c, float r, float d)
 {
     e = a;
     center = b;
     up = c;
+    fov = r;
+    df = d;
+    
 }
 
 Camera::~Camera()
@@ -61,10 +65,10 @@ Vector Camera::vectorV(Vector vectorW, Vector vectorU)
 Vector Camera::rayDirection(float i, float j, float nx, float ny)
 {
     float u,v;
-    float l = 0;
-    float r = nx;
-    float t = ny;
-    float b = 0;
+    float t = df*tanf(fov/2);
+    float b = -t;
+    float r = (nx*t)/ny;
+    float l = -r;
     float d = 10;
     
     u = l + (r - l)*(i+0.5)/nx;

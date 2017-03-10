@@ -16,7 +16,7 @@ class Camera
 {
 public:
     Camera();
-    Camera(Vector,Vector,Vector);
+    Camera(Vector,Vector,Vector,float,float);
     virtual ~Camera();
     Vector vectorW();
     Vector vectorU(Vector);
@@ -29,6 +29,8 @@ private:
     Vector e;
     Vector center;
     Vector up;
+    float fov;
+    float df;
     
 };
 
