@@ -84,7 +84,7 @@ float Vector::scalarProduct(Vector B)
     return result;
 }
 
-Vector Vector::product(float number)
+Vector Vector::numberProduct(float number)
 {
     float a,b,c;
     a = x*number;

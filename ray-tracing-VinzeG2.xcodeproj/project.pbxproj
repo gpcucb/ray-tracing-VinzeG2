@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1BCA8D1E78E5AB00AD9BCA /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D1BCA8B1E78E5AB00AD9BCA /* Sphere.cpp */; };
 		1D41785D1E5D1CD900A76390 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D41785C1E5D1CD900A76390 /* main.cpp */; };
 		1D4178651E5D1D3E00A76390 /* RGB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D4178631E5D1D3E00A76390 /* RGB.cpp */; };
+		1D8853161E83942A0083B207 /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D8853141E83942A0083B207 /* Triangle.cpp */; };
 		1DB45C5D1E6F5FBD00061509 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB45C5B1E6F5FBD00061509 /* Vector.cpp */; };
 		1DB45C601E6F60C500061509 /* Ray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB45C5E1E6F60C500061509 /* Ray.cpp */; };
 		1DCD7FB31E71F0AF00FB3FB9 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD7FB11E71F0AF00FB3FB9 /* Camera.cpp */; };
@@ -27,10 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D1BCA8B1E78E5AB00AD9BCA /* Sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sphere.cpp; sourceTree = "<group>"; };
+		1D1BCA8C1E78E5AB00AD9BCA /* Sphere.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Sphere.hpp; sourceTree = "<group>"; };
 		1D4178591E5D1CD900A76390 /* ray-tracing-VinzeG2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ray-tracing-VinzeG2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D41785C1E5D1CD900A76390 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1D4178631E5D1D3E00A76390 /* RGB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RGB.cpp; sourceTree = "<group>"; };
 		1D4178641E5D1D3E00A76390 /* RGB.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RGB.hpp; sourceTree = "<group>"; };
+		1D8853141E83942A0083B207 /* Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle.cpp; sourceTree = "<group>"; };
+		1D8853151E83942A0083B207 /* Triangle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Triangle.hpp; sourceTree = "<group>"; };
 		1DB45C5B1E6F5FBD00061509 /* Vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
 		1DB45C5C1E6F5FBD00061509 /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
 		1DB45C5E1E6F60C500061509 /* Ray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ray.cpp; sourceTree = "<group>"; };
@@ -53,16 +59,20 @@
 		1D4178501E5D1CD900A76390 = {
 			isa = PBXGroup;
 			children = (
+				1D1BCA8B1E78E5AB00AD9BCA /* Sphere.cpp */,
+				1D1BCA8C1E78E5AB00AD9BCA /* Sphere.hpp */,
 				1DCD7FB11E71F0AF00FB3FB9 /* Camera.cpp */,
 				1DCD7FB21E71F0AF00FB3FB9 /* Camera.hpp */,
 				1DB45C5E1E6F60C500061509 /* Ray.cpp */,
 				1DB45C5F1E6F60C500061509 /* Ray.hpp */,
+				1D8853141E83942A0083B207 /* Triangle.cpp */,
+				1D8853151E83942A0083B207 /* Triangle.hpp */,
+				1D4178641E5D1D3E00A76390 /* RGB.hpp */,
+				1D4178631E5D1D3E00A76390 /* RGB.cpp */,
 				1DB45C5B1E6F5FBD00061509 /* Vector.cpp */,
 				1DB45C5C1E6F5FBD00061509 /* Vector.hpp */,
 				1D41785B1E5D1CD900A76390 /* ray-tracing-VinzeG2 */,
 				1D41785A1E5D1CD900A76390 /* Products */,
-				1D4178631E5D1D3E00A76390 /* RGB.cpp */,
-				1D4178641E5D1D3E00A76390 /* RGB.hpp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,7 +153,9 @@
 				1DB45C601E6F60C500061509 /* Ray.cpp in Sources */,
 				1D41785D1E5D1CD900A76390 /* main.cpp in Sources */,
 				1DCD7FB31E71F0AF00FB3FB9 /* Camera.cpp in Sources */,
+				1D8853161E83942A0083B207 /* Triangle.cpp in Sources */,
 				1D4178651E5D1D3E00A76390 /* RGB.cpp in Sources */,
+				1D1BCA8D1E78E5AB00AD9BCA /* Sphere.cpp in Sources */,
 				1DB45C5D1E6F5FBD00061509 /* Vector.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

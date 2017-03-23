@@ -23,7 +23,7 @@ public:
     float module();
     Vector vectorialProduct(Vector);
     float scalarProduct(Vector);
-    Vector product(float);
+    Vector numberProduct(float);
     void show();
 protected:
     

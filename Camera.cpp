@@ -82,11 +82,11 @@ Vector Camera::rayDirection(float i, float j, float nx, float ny)
     vecV = vectorV(vecW,vecU);
     
     
-    Vector D = vecW.product(d);
-    Vector U = vecU.product(u);
-    Vector V = vecV.product(v);
+    Vector D = vecW.numberProduct(d);
+    Vector U = vecU.numberProduct(u);
+    Vector V = vecV.numberProduct(v);
     
-    Vector negativeD = D.product(-1);
+    Vector negativeD = D.numberProduct(-1);
     Vector DplusU = negativeD.plus(U);
     rayDirection = DplusU.plus(V);
     
